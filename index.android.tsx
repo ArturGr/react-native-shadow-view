@@ -54,7 +54,7 @@ class BoxShadow extends React.Component<BoxShadowProperties, any> {
         const outerWidth = lineWidth + radius
         const middleOffset = radius / outerWidth
         return (
-            <View {...others}>
+            <View {...others} pointerEvents={'none'}>
                 <Svg height={height + lineWidth * 2 + radius * 2} width={width + lineWidth * 2 + radius * 2} style={{ position: "absolute", top: y - lineWidth, left: x - lineWidth }}>
                     <Defs>
                         <LinearGradient id="top"
